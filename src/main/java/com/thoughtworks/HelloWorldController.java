@@ -12,9 +12,4 @@ public class HelloWorldController {
     return "Hello World! How are you?";
   }
 
-  @RequestMapping("/address")
-  @ResponseBody
-  public Address getAddress() {
-    return new Address("Christian Gebauer", "Asternweg 10", "63322", "Rödermark");
-  }
 }

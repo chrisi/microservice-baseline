@@ -23,10 +23,4 @@ public class HelloWorldControllerTest {
     assertThat(sut.hello(), is("Hello World! How are you?"));
   }
 
-  @Test
-  public void getAddress() throws Exception {
-    Address a = new Address("Christian Gebauer", "Asternweg 10", "63322", "Rödermark");
-    Assert.assertEquals(a, sut.getAddress());
-  }
-
 }
