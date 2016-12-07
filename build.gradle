@@ -19,8 +19,8 @@ jar {
 	version = System.getenv('SNAP_PIPELINE_COUNTER') != null ? System.getenv('SNAP_PIPELINE_COUNTER') : '0.0.1-SNAPSHOT'
 }
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
@@ -30,4 +30,5 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+  compileOnly('org.projectlombok:lombok:1.16.12')
 }
