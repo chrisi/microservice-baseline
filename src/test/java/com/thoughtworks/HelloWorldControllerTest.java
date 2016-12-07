@@ -20,7 +20,8 @@ public class HelloWorldControllerTest {
   @Test
   public void hello() throws Exception {
     //Assert.assertEquals("Hello World! How are you?", sut.hello());
-    assertThat(sut.hello(), is("Hello World! How are you?"));
+    assertThat(sut.hello(), is("Hello World! How are you tomorrow?"));
   }
 
 }
+
